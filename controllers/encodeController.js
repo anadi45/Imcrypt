@@ -30,7 +30,7 @@ const encodeImage = (req,res)=>{
             
             setTimeout(function(){
                 fs.unlinkSync(path);
-            }, 10000);
+            }, 3000);
         });
     } catch (error) {
         console.log(error);

@@ -1,4 +1,5 @@
 const multer = require("multer");
+const UPLOAD_PATH = process.env.UPLOAD_PATH;
 
 function uniqueKey (length) {
     let result           = '';
@@ -12,7 +13,7 @@ function uniqueKey (length) {
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, './uploads');
+        cb(null, UPLOAD_PATH);
     },
     filename: function(req, file, cb) {
         let fileNameArray = (file.originalname.split('.'));
