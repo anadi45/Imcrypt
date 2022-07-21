@@ -7,7 +7,7 @@ const encodeImage = (req,res)=>{
 
         if(!req.file) {
             return res.status(400).send({
-                message: "Field can't be left empty !"
+                message: "Image Field can't be left empty !"
             })
         }
 
@@ -16,7 +16,7 @@ const encodeImage = (req,res)=>{
         
         if(!message) {
             return res.status(400).send({
-                message: "Field can't be left empty !"
+                message: "Message Field can't be left empty !"
             })
         }
 

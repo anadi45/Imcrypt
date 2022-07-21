@@ -4,6 +4,13 @@ const fs = require("fs")
 const decodeImage = (req,res)=> {
     try {
         let dataToSend;
+
+        if(!req.file) {
+            return res.status(400).send({
+                message: "Image Field can't be left empty !"
+            })
+        }
+        
         const path = req.file.path;
         
         const python = spawn('python', ['controllers/decodeScript.py',path]);
