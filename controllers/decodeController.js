@@ -1,5 +1,5 @@
 const {spawn} = require("child_process");
-const fs = require("fs")
+const fs = require("fs");
 
 const decodeImage = (req,res)=> {
     try {
@@ -19,7 +19,8 @@ const decodeImage = (req,res)=> {
             dataToSend = data.toString();
         });
         python.on('close', (code) => {
-            res.send(dataToSend)   
+            req.session.context = dataToSend;
+            res.redirect("/result");
             fs.unlinkSync(path);
         });
     } catch (error) {
