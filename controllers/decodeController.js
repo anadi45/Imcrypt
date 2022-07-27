@@ -19,8 +19,7 @@ const decodeImage = (req,res)=> {
             dataToSend = data.toString();
         });
         python.on('close', (code) => {
-            req.session.context = dataToSend;
-            res.redirect("/result");
+            res.send(dataToSend);
             fs.unlinkSync(path);
         });
     } catch (error) {
