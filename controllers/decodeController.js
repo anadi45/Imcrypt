@@ -19,7 +19,7 @@ const decodeImage = (req,res)=> {
             dataToSend = data.toString();
         });
         python.on('close', (code) => {
-            res.send(dataToSend);
+            res.json({"SecretMessage":dataToSend});
             fs.unlinkSync(path);
         });
     } catch (error) {
