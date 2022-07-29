@@ -1,0 +1,20 @@
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.nav-item {
+    font-size: 25px;
+}
+
+.text {
+    color: rgb(14, 144, 168);
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.text:visited {
+    color: rgb(14, 144, 168);   
+}
