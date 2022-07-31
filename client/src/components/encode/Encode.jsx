@@ -32,8 +32,8 @@ const Encode = () => {
     const fd = new FormData();
   
     fd.append('image', image.files[0]);
-    fd.append('message',message.innerHTML);
-  
+    fd.append('message',message.value);
+    
     const encode = await fetch("https://anadi45-imcrypt.herokuapp.com/api/encode", {
       method: "POST",
       body: fd
