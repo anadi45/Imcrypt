@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <Link className="navbar-brand text" to="/">Imcrypt</Link>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div className="navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link className="nav-link text" to="/encode">Encode</Link>

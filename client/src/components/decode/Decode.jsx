@@ -31,7 +31,7 @@ const Decode = () => {
 	})
 
 	const secret = await decode.json();
-	setResult(secret.SecretMessage);
+	setResult(secret.message);
 
 	let modal = document.querySelector(".modal");
 	modal.style.display="block";

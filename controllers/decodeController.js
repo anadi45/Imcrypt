@@ -6,8 +6,8 @@ const decodeImage = (req,res)=> {
         let dataToSend;
 
         if(!req.file) {
-            return res.status(400).send({
-                message: "Image Field can't be left empty !"
+            return res.status(400).json({
+                "message": "ERROR: Image Field can't be left empty !"
             })
         }
         
@@ -19,7 +19,7 @@ const decodeImage = (req,res)=> {
             dataToSend = data.toString();
         });
         python.on('close', (code) => {
-            res.json({"SecretMessage":dataToSend});
+            res.json({"message":dataToSend});
             fs.unlinkSync(path);
         });
     } catch (error) {
