@@ -15,6 +15,7 @@ const encodeImage = (req,res)=>{
         const message = req.body.message;
         
         if(!message) {
+            fs.unlinkSync(path);
             return res.status(400).json({
                 "message": "ERROR: Message Field can't be left empty !"
             })
