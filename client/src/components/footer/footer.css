@@ -3,3 +3,9 @@
     color: rgb(14, 144, 168);
     text-decoration: none;
 }
+
+footer {
+    padding-top:0px;
+    margin-top: 0px;
+    background-color:white;
+}

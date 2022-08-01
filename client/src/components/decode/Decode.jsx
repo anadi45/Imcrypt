@@ -32,9 +32,10 @@ const Decode = () => {
       let modal = document.querySelector(".modal");
       setResult("ERROR: Only PNG Image is accepted !");
       modal.style.display="block";
+	  setDecode("Decode");
       return;
     }
-	
+
 	fd.append('image', image.files[0]);
 
 	const decode = await fetch("https://anadi45-imcrypt.herokuapp.com/api/decode", {

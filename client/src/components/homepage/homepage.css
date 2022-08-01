@@ -1,0 +1,17 @@
+.ques, .title {
+    font-size: 30px;
+    margin-bottom:12px;
+    color:rgb(14, 144, 168);    
+}
+
+.ans, .intro {
+    font-size: 20px;
+    color: black;    
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
