@@ -38,7 +38,7 @@ const Decode = () => {
 
 	fd.append('image', image.files[0]);
 
-	const decode = await fetch("https://anadi45-imcrypt.herokuapp.com/api/decode", {
+	const decode = await fetch("https://ranjeetbaraik-imcrypt.onrender.com/api/decode", {
 		method: "POST",
 		body: fd
 	})

@@ -62,7 +62,7 @@ const Encode = () => {
   return (
     <div className="container">
 
-        <form method="POST" action="https://anadi45-imcrypt.herokuapp.com/api/encode" encType="multipart/form-data">
+        <form method="POST" action="https://ranjeetbaraik-imcrypt.onrender.com/api/encode" encType="multipart/form-data">
             <div className="form-group">
                 <label htmlFor="inputImage">Your PNG Image</label>
                 <input type="file" className="form-control" id="inputImage" name="image" />
